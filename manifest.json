@@ -1,0 +1,9 @@
+{
+  "name": "Telegram API Explorer",
+  "short_name": "API Explorer",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f5ef",
+  "theme_color": "#f3f5ef",
+  "description": "Search Telegram MTProto API methods and inspect their signatures."
+}

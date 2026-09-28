@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f5">
+    <meta name="description" content="Search Telegram MTProto API methods, inspect parameters, and browse official references.">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>Telegram API Explorer</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Telegram API Explorer home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-name">Telegram <span>API Explorer</span></span>
+      </a>
+      <a class="topbar-link" href="https://core.telegram.org/api" target="_blank" rel="noopener noreferrer">
+        Official docs <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">DEVELOPER REFERENCE <span></span> TELEGRAM MTProto</p>
+          <h1 id="page-title">Find the method.<br><em>Understand the API.</em></h1>
+          <p class="lede">Search Telegram client methods by name, parameter, or return type. Open a method to inspect its signature and official reference.</p>
+        </div>
+        <div class="intro-stats" aria-label="Catalog information">
+          <span class="stat-number" id="hero-method-count">783</span>
+          <span class="stat-label">MTProto methods</span>
+          <span class="stat-source">Official TL schema</span>
+        </div>
+      </section>
+
+      <section class="language-guide" aria-labelledby="language-guide-title">
+        <div class="language-guide-heading">
+          <div>
+            <p class="eyebrow">CHOOSING A BACKEND</p>
+            <h2 id="language-guide-title">Popular languages for APIs</h2>
+          </div>
+          <p>API is an interface, not a programming language. Your server language is your choice.</p>
+        </div>
+        <div class="language-table-wrap">
+          <table class="language-table">
+            <thead>
+              <tr>
+                <th scope="col">Language</th>
+                <th scope="col">Common framework</th>
+                <th scope="col">Often chosen for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">JavaScript / TypeScript</th>
+                <td>Node.js · Express · NestJS</td>
+                <td>Web services, bots, and shared frontend/backend skills</td>
+              </tr>
+              <tr>
+                <th scope="row">Python</th>
+                <td>FastAPI · Django REST</td>
+                <td>Quick development, automation, and data-focused services</td>
+              </tr>
+              <tr>
+                <th scope="row">Java</th>
+                <td>Spring Boot</td>
+                <td>Large applications and established enterprise systems</td>
+              </tr>
+              <tr>
+                <th scope="row">C#</th>
+                <td>ASP.NET Core</td>
+                <td>Microsoft-based systems and strongly typed services</td>
+              </tr>
+              <tr>
+                <th scope="row">Go</th>
+                <td>Standard library · Gin</td>
+                <td>Lightweight services and concurrent workloads</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="telegram-language-note"><strong>For Telegram:</strong> the Bot API uses HTTP, so any language with an HTTP client can call it. For a first bot, Node.js/TypeScript or Python are practical choices. Telegram API/TDLib is for custom clients and has different development requirements.</p>
+      </section>
+
+      <section class="explorer" aria-labelledby="explorer-title">
+        <div class="explorer-topline">
+          <div>
+            <p class="eyebrow">API CATALOG</p>
+            <h2 id="explorer-title">Browse methods <span id="method-count" role="status">Loading catalog...</span></h2>
+          </div>
+          <div class="family-control">
+            <label for="telegram-api-select">API family</label>
+            <select id="telegram-api-select">
+              <option value="client">Telegram API / MTProto</option>
+              <option value="bot">Bot API</option>
+              <option value="gateway">Gateway API</option>
+              <option value="widgets">Telegram Widgets</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="family-summary" aria-live="polite" aria-atomic="true">
+          <div>
+            <h3 id="telegram-api-name">Telegram API / MTProto</h3>
+            <p id="telegram-api-description">Methods used to build custom Telegram clients. TDLib handles networking, encryption, and local data storage.</p>
+          </div>
+          <div class="family-summary-meta">
+            <span id="telegram-api-fit">Client API methods are listed below</span>
+            <a id="telegram-api-link" href="https://core.telegram.org/api" target="_blank" rel="noopener noreferrer">Documentation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="method-browser" id="telegram-method-browser">
+          <aside class="method-navigation" aria-label="Method search and selection">
+            <label for="method-search">Search the catalog</label>
+            <div class="search-field">
+              <span aria-hidden="true">⌕</span>
+              <input id="method-search" type="search" placeholder="Name, parameter, or type" autocomplete="off">
+              <kbd>/</kbd>
+            </div>
+            <div class="select-heading">
+              <label for="telegram-method-select">Methods</label>
+              <span>Grouped by namespace</span>
+            </div>
+            <select id="telegram-method-select" aria-describedby="method-count" size="1">
+              <option>Loading official method catalog...</option>
+            </select>
+            <p class="navigation-note">Choose a method to view its signature.</p>
+          </aside>
+
+          <article class="method-detail" aria-live="polite" aria-atomic="true">
+            <div class="method-detail-heading">
+              <div>
+                <p class="eyebrow">METHOD SIGNATURE</p>
+                <h3 id="method-name">Loading methods</h3>
+              </div>
+              <span class="method-badge">MTProto</span>
+            </div>
+            <dl class="method-facts">
+              <div><dt>Method ID</dt><dd id="method-id">—</dd></div>
+              <div><dt>Returns</dt><dd id="method-return">—</dd></div>
+            </dl>
+            <div class="parameters-heading">
+              <h4>Parameters</h4>
+              <span id="parameter-count">—</span>
+            </div>
+            <div id="method-params" class="parameter-list" aria-label="Method parameters">
+              <p class="detail-placeholder">Fetching the official Telegram schema...</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Source: <a href="https://core.telegram.org/schema/json" target="_blank" rel="noopener noreferrer">Telegram TL schema</a></span>
+      <span>Catalog refresh: <code>node scripts/update-telegram-methods.mjs</code></span>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
